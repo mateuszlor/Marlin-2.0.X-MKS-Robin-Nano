@@ -1,11 +1,10 @@
 # Marlin Firmware adapted for the MKS Robin Nano 1.1/1.2 (Sapphire PRO)
 
-## Marlin 2.0 ![Marlin logo](buildroot/share/pixmaps/logo/marlin-250.png)
+## Marlin 2.0
 
-Marlin 2.0 takes this popular RepRap firmware to the next level by adding support for much faster 32-bit and ARM-based boards while improving support for 8-bit AVR boards. Read about Marlin's decision to use a "Hardware Abstraction Layer" below.
-
-Download earlier versions of Robin Nano Firmware on the [Releases page](https://github.com/le3tspeak/Marlin-2.0.X-Sapphire-PRO/releases).
-
+|   |   |
+|---|---|
+|Marlin 2.0 takes this popular RepRap firmware to the next level by adding support for much faster 32-bit and ARM-based boards while improving support for 8-bit AVR boards.|![Marlin logo](buildroot/share/pixmaps/logo/marlin-250.png)|
 ## Building Marlin 2.0
 
 To build Marlin 2.0 you'll need [PlatformIO](http://docs.platformio.org/en/latest/ide.html#platformio-ide). Detailed build and install instructions are posted at: [Installing Marlin (VSCode)](http://marlinfw.org/docs/basics/install_platformio_vscode.html).
@@ -54,7 +53,7 @@ Default configuration in this repo is set to Sapphire PRO with some additional c
 
 ## UI Preview
 
-![UI preview](docs/UI.png")
+![UI preview](docs/UI.png)
   
 ## Changes
 
