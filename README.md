@@ -1,8 +1,6 @@
-# Marlin Firmware adapted for the MKS Robin Nano 1.1/1.2
+# Marlin Firmware adapted for the MKS Robin Nano 1.1/1.2 (Sapphire PRO)
 
-
-## Marlin 2.0<img align="right" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
-
+## Marlin 2.0 ![Marlin logo](buildroot/share/pixmaps/logo/marlin-250.png)
 
 Marlin 2.0 takes this popular RepRap firmware to the next level by adding support for much faster 32-bit and ARM-based boards while improving support for 8-bit AVR boards. Read about Marlin's decision to use a "Hardware Abstraction Layer" below.
 
@@ -10,19 +8,18 @@ Download earlier versions of Robin Nano Firmware on the [Releases page](https://
 
 ## Building Marlin 2.0
 
-To build Marlin 2.0 you'll need [PlatformIO](http://docs.platformio.org/en/latest/ide.html#platformio-ide). Detailed build and install instructions are posted at:
-
- 
-  - [Installing Marlin (VSCode)](http://marlinfw.org/docs/basics/install_platformio_vscode.html).
+To build Marlin 2.0 you'll need [PlatformIO](http://docs.platformio.org/en/latest/ide.html#platformio-ide). Detailed build and install instructions are posted at: [Installing Marlin (VSCode)](http://marlinfw.org/docs/basics/install_platformio_vscode.html).
 
 ### Supported Platforms
 
   Platform|MCU| Board
   --------|---|-------
-  [MKS Robin Nano](https://makerbase.com.cn/en/)|ARM® Cortex-M3 / STM32F103VET6| MKS Robin Nano 1.1 
+  [MKS Robin Nano](https://makerbase.com.cn/en/)|ARM® Cortex-M3 / STM32F103VET6| MKS Robin Nano 1.1
   [MKS Robin Nano](https://makerbase.com.cn/en/)|ARM® Cortex-M3 / STM32F103VET6| MKS Robin Nano 1.2
   
 ### Features of the Preset Configuration of Branch MKS Robin Nano
+
+Default configuration in this repo is set to Sapphire PRO with some additional changes mentioned in ##Changes
 
   Features|Active|Value
   --------|------|-----
@@ -43,7 +40,6 @@ To build Marlin 2.0 you'll need [PlatformIO](http://docs.platformio.org/en/lates
   Neopixel|-|Ready
   Cancel Objects|True|-
 
-
   Axes|Sapphire Pro|Sapphire Plus|Bluer
   ----|----|----|----
   X|TMC2208 Standalone|TMC2208 Standalone|TMC2208 Standalone
@@ -57,63 +53,15 @@ To build Marlin 2.0 you'll need [PlatformIO](http://docs.platformio.org/en/lates
   Flash: | 44.9% (used 235476 bytes from 524288 bytes)
 
 ## UI Preview
-<img align="center" width=650 src="/docs/UI.png" />
+
+![UI preview](docs/UI.png")
   
+## Changes
 
-
-## Changelog
-
-Version|Changes & Fixes
--------|-------
-1.0.7
-  -|Major Update
-1.0.6
-  -|Add Z2 & E1 HARDWARE_SERIAL
-  -|Add Multi-hotend option
-  -|Add Adv. Preset Custom thermistor
-  -|Add SPI_FLASH
-  -|Save EEPROM on STM32
-  -|FIX UTF char cutoff Y
-  -|TMC Homing stepper phase Z Disable
-  -|Add Adv. Preset Custom Bed Size
-  -|Add PIO MKS Robin Nano -DSS_TIMER=4
-1.0.5b
-  -|TMC SW Serial extension E1 & Z2
-  -|Add Adv. Preset Custom PID
-  -|Add JD_HANDLE_SMALL_SEGMENTS option
-  -|Russian language fix
-1.0.5a
-  -|Add Adv. Preset Custom Axis Steps Per MM
-  -|Extension of BLTouch Preset
-  -|Add Adv. Preset Custom Stepper Motor Drivers
-  -|Add Status Logo TT
-  -|Add Adv. Preset Optical Endstops XY
-1.0.5 
-  -|Major Update & Reworking
-  -| Add Adv. Preset Linear Pressure Control
-  -| Add Adv. Preset Motion Modes
-  -| Add Adv. Preset BLTouch
-  -| Move SD Settings to Pins
-  -| Minor TFT Fixes
-1.0.4
-  -|Touch support for Marlin Menus
-  -|errors moved in Sanity Check
-  -|new TFT scale up
-  -|improve G2/3 movement buffer
-  -|STM32F1: Fix SDIO read errors
-  -|Improve SD Card Read Speed
-  -|Add Cura/Prusa Start/End Codes
-  -|Add Cura/Prusa Profiles
-1.0.3
-  -|Add Bluer Fast Config Switch Preset 
-  -|Error messages separated
-1.0.2
-  -|Add TMC HW Serial
-  -|Add documentation TMC HW Serial
-  -|Add TFT Color Selection
-  -|Fix SD Read Errors
-1.0.1a|Initial commit
-  
+- Sapphire PRO by default
+- Enabled case temperature sensor
+  - connected to TH2 (PC2)
+  - displayed as chamber temperature
 
 ## License
 
